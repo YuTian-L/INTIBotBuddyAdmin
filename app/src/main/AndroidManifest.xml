@@ -12,17 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.intibotbuddy_admin.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.intibotbuddy_admin.Main2Activity" />
+        <activity android:name=".Main2Activity" />
         <activity
-            android:name="com.example.intibotbuddy_admin.SafetyActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.Main2Activity">
+            android:name=".SafetyActivity"
+            android:parentActivityName=".Main2Activity">
 
             <!-- The meta-data tag is required if it supports API level 15 and lower -->
             <meta-data
@@ -30,298 +30,357 @@
                 android:value="com.example.intibotbuddy_admin.Main2Activity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.AcademicActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.Main2Activity">
+            android:name=".AcademicActivity"
+            android:parentActivityName=".Main2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.Main2Activity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.TransportationActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.Main2Activity">
+            android:name=".TransportationActivity"
+            android:parentActivityName=".Main2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.Main2Activity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.FacilitiesActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.Main2Activity">
+            android:name=".FacilitiesActivity"
+            android:parentActivityName=".Main2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.Main2Activity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.ContactsActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.Main2Activity">
+            android:name=".ContactsActivity"
+            android:parentActivityName=".Main2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.Main2Activity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.ActivitiesActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.Main2Activity">
+            android:name=".ActivitiesActivity"
+            android:parentActivityName=".Main2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.Main2Activity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.HelpdesksActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.Main2Activity">
+            android:name=".HelpdesksActivity"
+            android:parentActivityName=".Main2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.Main2Activity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.WifiActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.Main2Activity">
+            android:name=".WifiActivity"
+            android:parentActivityName=".Main2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.Main2Activity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.ExtraInfoActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.Main2Activity">
+            android:name=".ExtraInfoActivity"
+            android:parentActivityName=".Main2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.Main2Activity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.SettingsActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.Main2Activity">
+            android:name=".SettingsActivity"
+            android:parentActivityName=".Main2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.Main2Activity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.InjuredActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.SafetyActivity">
+            android:name=".InjuredActivity"
+            android:parentActivityName=".SafetyActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.SafetyActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.EmergencyActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.SafetyActivity">
+            android:name=".EmergencyActivity"
+            android:parentActivityName=".SafetyActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.SafetyActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.CounsellingActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.SafetyActivity">
+            android:name=".CounsellingActivity"
+            android:parentActivityName=".SafetyActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.SafetyActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.GetInTouchActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.AcademicActivity">
+            android:name=".GetInTouchActivity"
+            android:parentActivityName=".AcademicActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.AcademicActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.WebsitesActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.AcademicActivity">
+            android:name=".WebsitesActivity"
+            android:parentActivityName=".AcademicActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.AcademicActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.SocialMediaActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.AcademicActivity">
+            android:name=".SocialMediaActivity"
+            android:parentActivityName=".AcademicActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.AcademicActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.AcademicWebsitesResActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.AcademicActivity">
+            android:name=".AcademicWebsitesResActivity"
+            android:parentActivityName=".AcademicActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.AcademicActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.IntimaFbActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.AcademicActivity">
+            android:name=".IntimaFbActivity"
+            android:parentActivityName=".AcademicActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.AcademicActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.ByIntiActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.TransportationActivity">
+            android:name=".ByIntiActivity"
+            android:parentActivityName=".TransportationActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.TransportationActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.NonIntiActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.TransportationActivity">
+            android:name=".NonIntiActivity"
+            android:parentActivityName=".TransportationActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.TransportationActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.WhereToWaitForBusActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.TransportationActivity">
+            android:name=".WhereToWaitForBusActivity"
+            android:parentActivityName=".TransportationActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.TransportationActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.FacilitiesGeneralActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.FacilitiesActivity">
+            android:name=".FacilitiesGeneralActivity"
+            android:parentActivityName=".FacilitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.FacilitiesActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.FacilitiesAcademicActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.FacilitiesActivity">
+            android:name=".FacilitiesAcademicActivity"
+            android:parentActivityName=".FacilitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.FacilitiesActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.FacilitiesHostelActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.FacilitiesActivity">
+            android:name=".FacilitiesHostelActivity"
+            android:parentActivityName=".FacilitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.FacilitiesActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.SportsRecreationalActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.FacilitiesActivity">
+            android:name=".SportsRecreationalActivity"
+            android:parentActivityName=".FacilitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.FacilitiesActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.ContactsGeneralActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.ContactsActivity">
+            android:name=".ContactsGeneralActivity"
+            android:parentActivityName=".ContactsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.ContactsActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.ContactsAcademicActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.ContactsActivity">
+            android:name=".ContactsAcademicActivity"
+            android:parentActivityName=".ContactsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.ContactsActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.ContactsHostelActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.ContactsActivity">
+            android:name=".ContactsHostelActivity"
+            android:parentActivityName=".ContactsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.ContactsActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.ContactsOthersActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.ContactsActivity">
+            android:name=".ContactsOthersActivity"
+            android:parentActivityName=".ContactsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.ContactsActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.SportsActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.ActivitiesActivity">
+            android:name=".SportsActivity"
+            android:parentActivityName=".ActivitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.ActivitiesActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.ClubsSocietiesActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.ActivitiesActivity">
+            android:name=".ClubsSocietiesActivity"
+            android:parentActivityName=".ActivitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.ActivitiesActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.EventsActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.ActivitiesActivity">
+            android:name=".EventsActivity"
+            android:parentActivityName=".ActivitiesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.ActivitiesActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.ItHelpdeskActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.HelpdesksActivity">
+            android:name=".ItHelpdeskActivity"
+            android:parentActivityName=".HelpdesksActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.HelpdesksActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.AfmHelpdeskActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.HelpdesksActivity">
+            android:name=".AfmHelpdeskActivity"
+            android:parentActivityName=".HelpdesksActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.HelpdesksActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.MakeEnquiryActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.HelpdesksActivity">
+            android:name=".MakeEnquiryActivity"
+            android:parentActivityName=".HelpdesksActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.HelpdesksActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.OnlineSuggestionActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.HelpdesksActivity">
+            android:name=".OnlineSuggestionActivity"
+            android:parentActivityName=".HelpdesksActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.HelpdesksActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.StudentWifiActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.WifiActivity">
+            android:name=".StudentWifiActivity"
+            android:parentActivityName=".WifiActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.WifiActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.HostelWifiActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.WifiActivity">
+            android:name=".HostelWifiActivity"
+            android:parentActivityName=".WifiActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.WifiActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.NearbyMallsActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.ExtraInfoActivity">
+            android:name=".NearbyMallsActivity"
+            android:parentActivityName=".ExtraInfoActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.WifiActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.IntiShuttleActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.ByIntiActivity">
+            android:name=".IntiShuttleActivity"
+            android:parentActivityName=".ByIntiActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.ByIntiActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.LocalShuttleActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.NonIntiActivity">
+            android:name=".LocalShuttleActivity"
+            android:parentActivityName=".NonIntiActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.NonIntiActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.TaxiServiceActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.NonIntiActivity">
+            android:name=".TaxiServiceActivity"
+            android:parentActivityName=".NonIntiActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.NonIntiActivity" />
         </activity>
         <activity
-            android:name="com.example.intibotbuddy_admin.OtherOptionsActivity"
-            android:parentActivityName="com.example.intibotbuddy_admin.NonIntiActivity">
+            android:name=".OtherOptionsActivity"
+            android:parentActivityName=".NonIntiActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.intibotbuddy_admin.NonIntiActivity" />
+        </activity>
+        <activity
+            android:name=".AddInjuredActivity"
+            android:parentActivityName=".InjuredActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.intibotbuddy_admin.InjuredActivity" />
+        </activity>
+        <activity
+            android:name=".AddEmergencyActivity"
+            android:parentActivityName=".EmergencyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.intibotbuddy_admin.EmergencyActivity" />
+        </activity>
+        <activity
+            android:name=".DeleteInjuredActivity"
+            android:parentActivityName=".InjuredActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.intibotbuddy_admin.InjuredActivity" />
+        </activity>
+        <activity
+            android:name=".AddCounsellingActivity"
+            android:parentActivityName=".CounsellingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.intibotbuddy_admin.CounsellingActivity" />
+        </activity>
+        <activity
+            android:name=".EditInjuredActivity"
+            android:parentActivityName=".InjuredActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.intibotbuddy_admin.InjuredActivity" />
+        </activity>
+        <activity android:name=".EditEmergencyActivity"
+            android:parentActivityName=".EmergencyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.intibotbuddy_admin.EmergencyActivity" />
+        </activity>
+        <activity android:name=".EditCounsellingActivity"
+            android:parentActivityName=".CounsellingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.intibotbuddy_admin.CounsellingActivity" />
+        </activity>
+        <activity android:name=".DeleteEmergencyActivity"
+            android:parentActivityName=".EmergencyActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.intibotbuddy_admin.EmergencyActivity" />
+        </activity>
+        <activity android:name=".DeleteCounsellingActivity"
+            android:parentActivityName=".CounsellingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.intibotbuddy_admin.CounsellingActivity" />
         </activity>
     </application>
 

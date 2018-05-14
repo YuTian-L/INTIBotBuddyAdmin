@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
@@ -110,5 +111,11 @@ public class SportsRecreationalActivity extends AppCompatActivity {
 
         ListViewAdapter5 adapter = new ListViewAdapter5(this, items);
         listView.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.actionbuttons_add_edit_delete, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }

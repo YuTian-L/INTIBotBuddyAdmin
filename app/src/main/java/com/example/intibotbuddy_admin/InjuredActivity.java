@@ -1,9 +1,12 @@
 package com.example.intibotbuddy_admin;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
@@ -110,5 +113,36 @@ public class InjuredActivity extends AppCompatActivity {
 
         ListViewAdapter adapter = new ListViewAdapter(this, items);
         listView.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.actionbuttons_add_edit_delete, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_add:
+                Intent intent_add = new Intent(this, AddInjuredActivity.class);
+                startActivity(intent_add);
+                return true;
+
+            case R.id.action_edit:
+                Intent intent_edit = new Intent(this, EditInjuredActivity.class);
+                startActivity(intent_edit);
+                return true;
+
+            case R.id.action_delete:
+                Intent intent_del = new Intent(this, DeleteInjuredActivity.class);
+                startActivity(intent_del);
+                return true;
+
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
