@@ -2,12 +2,12 @@
 <resources>
     <color name="colorPrimary">#ff4444</color>
     <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#dfadbe</color>
-    <color name="dark_blue_text">#003b5e</color>
-    <color name="dark_blue_background">#000000</color>
-    <color name="light_blue_text">#00f2ff</color>
-    <color name="light_blue_hint">#63c5ca</color>
-    <color name="cyan_button">#00ffdd</color>
-    <color name="light_blue_input">#49d0d7</color>
-    <color name="darker_light_blue_text">#00bfff</color>
+    <color name="colorAccent">#d90065</color>
+    <color name="dark_blue_text">#008ac9</color>
+    <color name="dark_blue_background">#bad7ff</color>
+    <color name="light_blue_text">#003b5e</color>
+    <color name="light_blue_hint">#1b3536</color>
+    <color name="cyan_button">#000000</color>
+    <color name="light_blue_input">#224243</color>
+    <color name="darker_light_blue_text">#9500ff</color>
 </resources>

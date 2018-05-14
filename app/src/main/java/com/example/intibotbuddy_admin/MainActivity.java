@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, prefName);
-            AutoCompleteTextView textView = findViewById(R.id.studentIDInput);
+            AutoCompleteTextView textView = findViewById(R.id.userIDInput);
             textView.setAdapter(adapter);
             textView.setThreshold(1);
         } catch (Exception e) {
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             editor.putBoolean(getString(R.string.save_rememberMe), checked);
             editor.commit();
 
-            EditText editTextStudentID = findViewById(R.id.studentIDInput);
+            EditText editTextStudentID = findViewById(R.id.userIDInput);
             EditText editTextPassword = findViewById(R.id.passwordInput);
             String username = editTextStudentID.getText().toString();
             String password = editTextPassword.getText().toString();
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
-        EditText editTextStudentID = findViewById(R.id.studentIDInput);
+        EditText editTextStudentID = findViewById(R.id.userIDInput);
         EditText editTextPassword = findViewById(R.id.passwordInput);
         String username = editTextStudentID.getText().toString();
         String password = editTextPassword.getText().toString();

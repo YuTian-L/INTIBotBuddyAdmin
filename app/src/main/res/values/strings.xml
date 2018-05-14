@@ -89,4 +89,23 @@
     <string name="tooltipText_helpdesks">Help, suggest, enquire</string>
     <string name="tooltipText_wifi">Trying to connect?</string>
     <string name="tooltipText_extraInfo">Let me try to help you more!</string>
+    <string name="action_add">Add</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="text_title">Title:</string>
+    <string name="input_title">Title</string>
+    <string name="input_operatingHours">Operating hours</string>
+    <string name="input_contact">Contact</string>
+    <string name="input_location">Location</string>
+    <string name="text_newTitle">New Title:</string>
+    <string name="text_newOperatingHours">New Operating\nHours:</string>
+    <string name="text_newContact">New Contact:</string>
+    <string name="text_newLocation">New Location:</string>
+    <string name="button_add">Confirm</string>
+    <string name="button_edit">Update</string>
+    <string name="button_delete">Yep, I am sure</string>
+    <string name="input_newTitle">New Title</string>
+    <string name="input_newOperatingHours">New Operating hours</string>
+    <string name="input_newContact">New Contact</string>
+    <string name="input_newLocation">New Location</string>
 </resources>

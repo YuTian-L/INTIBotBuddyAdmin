@@ -79,14 +79,13 @@ public class SettingsBgActivity extends AsyncTask {
                 } else {
                     return "{\"status\":\"Please check new password fields\",\"message\":\"New passwords do not match\"}";
                 }
-            }
-            else {
+            } else {
                 return "{\"status\":\"Invalid\",\"message\":\"All fields are required\"}";
             }
 
         } catch (Exception e) {
             Log.e("SettingsBgActivityError", e.getLocalizedMessage());
-            return  new String("Exception: " + e.getMessage());
+            return new String("Exception: " + e.getMessage());
         }
     }
 
@@ -99,12 +98,10 @@ public class SettingsBgActivity extends AsyncTask {
         if (title.equals("Password has been changed successfully")) {
             Toast.makeText(context, title + "\n" + message, Toast.LENGTH_SHORT).show();
             // TODO clear edit text fields or refresh the page
-            ((Activity)context).finish();
+            ((Activity) context).finish();
             Intent intent = new Intent(context, SettingsActivity.class);
             context.startActivity(intent);
-        }
-
-        else {
+        } else {
             AlertDialog alertDialog = new AlertDialog.Builder(context).create();
             alertDialog.setTitle(title);
             alertDialog.setMessage(message);
@@ -131,7 +128,7 @@ public class SettingsBgActivity extends AsyncTask {
     protected void onPostExecute(Object o) {
         super.onPostExecute(o);
         try {
-            parseJSON((String)o);
+            parseJSON((String) o);
         } catch (JSONException e) {
             e.printStackTrace();
         }
